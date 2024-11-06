@@ -1,0 +1,166 @@
+*{
+  font-family: "Roboto Mono", monospace;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+:root{
+  --colors-text: #fff;
+  --colors-primary: #FF0000;
+  --colors-secondary: #B20600;
+  --color-bg: #000000;
+  --color-moves: #B7B7B7;
+  --color-screen: #7AB2D3;
+}
+
+.inputs{
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  width: 95%;
+}
+
+button{
+  padding: 1rem;
+  height: 5rem;
+  color: var(--colors-text);
+  background: var(--color-bg);
+  border: 0.1rem solid var(--colors-secondary);
+  border-top-right-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+
+}
+
+input{
+  width: 95%;
+  height: 5rem;
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+  background: var(--colors-secondary);
+  color: var(--colors-text);
+  padding: 1rem;
+  outline: none;
+  border: 0.1rem solid var(--color-bg);
+}
+
+.pokedex--section{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  background: var(--colors-secondary);
+}
+
+.pokedex--section h1{
+  padding: 1rem;
+}
+
+.pokedex-screen{
+  display: flex;
+  align-items: center;
+  background: var(--color-screen);
+  width: 50%;
+  height: 100%;
+  border-radius: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.pokemon{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pokemon-data{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pokeStats{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.pokeInfo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+}
+
+.pokeInfo h1{
+  font-size: 1.5rem;
+  background: var(--colors-secondary);
+  border-radius: 0.3rem;
+  color: var(--colors-text);
+}
+
+.pokeInfo ul{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+
+.pokeInfo li{
+  padding: 0.3rem;
+  border-radius: 0.2rem;
+  color: var(--colors-text);
+  border: 0.01rem solid var(--color-bg);
+  text-shadow: 1px 1px 2px rgba(0,0,0,.7);
+}
+
+.lists{
+  display: flex;
+  background: var(--color-moves);
+  padding: 1rem;
+  height: 80vh;
+  width: 100%;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.moveList{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.moveList li{
+  display: flex;
+  justify-content: center;
+}
+
+.abilityList{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.abilityList li{
+  display: flex;
+  justify-content: center;
+}
+
+img{
+  width: 15rem;
+}
+
+p{
+  width: 2rem;
+}
